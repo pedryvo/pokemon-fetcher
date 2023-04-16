@@ -10,6 +10,11 @@ interface PokemonListProps {
   selectedPokemonType: string;
 }
 
+interface Object {
+  name: string;
+  url: string;
+}
+
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +35,7 @@ const PokemonList: React.FC<PokemonListProps> = ({ selectedPokemonType }) => {
   return (
     <Container>
       {pokemonList.map((pokemon, index) => {
+        const pokemon_object = pokemon.pokemon;
         const name = pokemon.pokemon.name;
         const url = pokemon.pokemon.url;
         const number = parseInt(url.split('/')[6]);
