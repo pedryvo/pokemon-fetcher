@@ -43,7 +43,7 @@ const App: React.FC = () => {
       <Navbar
         title="Pokemon Fetcher"
         navItems={navItems}
-        dropdownTitle="Select Pokemon Type"
+        dropdownTitle="Selecione o tipo de Pokemon"
         dropdownItems={dropdownItems}
         onPokemonTypeSelect={handlePokemonTypeSelect}
       />
