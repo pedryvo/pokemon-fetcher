@@ -16,10 +16,20 @@ const NavbarContainer = styled.nav`
   background-color: #333;
   color: white;
   padding: 10px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 `;
 
 const Title = styled.h1`
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -27,15 +37,28 @@ const NavLinks = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const NavLink = styled.li`
   margin: 0 10px;
+
+  @media screen and (max-width: 768px) {
+    margin: 5px 0;
+  }
 `;
 
 const Dropdown = styled.div`
   position: relative;
   display: inline-block;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 10px 0;
+  }
 `;
 
 const DropdownContent = styled.div`
@@ -58,6 +81,12 @@ const DropdownContent = styled.div`
     &:hover {
       background-color: #ddd;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: static;
+    display: block;
+    margin: 0px;
   }
 `;
 
