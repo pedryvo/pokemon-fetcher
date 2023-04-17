@@ -12,11 +12,14 @@ const Card = styled.div`
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-box-shadow: 5px 5px 14px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 14px -4px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 14px -4px rgba(0,0,0,0.75);
 `;
 
 const Name = styled.h3`
